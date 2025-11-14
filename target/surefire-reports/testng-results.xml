@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-14T20:40:21 WIB" name="Java Testing" finished-at="2025-11-14T20:40:56 WIB" duration-ms="35286">
+    <groups>
+    </groups>
+    <test started-at="2025-11-14T20:40:21 WIB" name="Basic Test" finished-at="2025-11-14T20:40:56 WIB" duration-ms="35286">
+      <class name="com.juaracoding.swaglabs.LoginTest">
+        <test-method signature="loginSuccessWithValidCredentialTest(java.lang.String,java.lang.String)[pri:1, instance:com.juaracoding.swaglabs.LoginTest@78b729e6]" started-at="2025-11-14T20:40:21 WIB" name="loginSuccessWithValidCredentialTest" finished-at="2025-11-14T20:40:28 WIB" duration-ms="7094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessWithValidCredentialTest -->
+        <test-method signature="loginFailedWithInvalidUsernameTest(java.lang.String,java.lang.String)[pri:2, instance:com.juaracoding.swaglabs.LoginTest@78b729e6]" started-at="2025-11-14T20:40:28 WIB" name="loginFailedWithInvalidUsernameTest" finished-at="2025-11-14T20:40:35 WIB" duration-ms="7115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithInvalidUsernameTest -->
+        <test-method signature="loginFailedWithInvalidPasswordTest(java.lang.String,java.lang.String)[pri:3, instance:com.juaracoding.swaglabs.LoginTest@78b729e6]" started-at="2025-11-14T20:40:35 WIB" name="loginFailedWithInvalidPasswordTest" finished-at="2025-11-14T20:40:42 WIB" duration-ms="7064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithInvalidPasswordTest -->
+        <test-method signature="loginFailedWithEmptyTest(java.lang.String,java.lang.String)[pri:4, instance:com.juaracoding.swaglabs.LoginTest@78b729e6]" started-at="2025-11-14T20:40:42 WIB" name="loginFailedWithEmptyTest" finished-at="2025-11-14T20:40:49 WIB" duration-ms="6938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithEmptyTest -->
+        <test-method signature="loginFailedWithEmptyUsernameTest(java.lang.String,java.lang.String)[pri:5, instance:com.juaracoding.swaglabs.LoginTest@78b729e6]" started-at="2025-11-14T20:40:49 WIB" name="loginFailedWithEmptyUsernameTest" finished-at="2025-11-14T20:40:56 WIB" duration-ms="7027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithEmptyUsernameTest -->
+      </class> <!-- com.juaracoding.swaglabs.LoginTest -->
+    </test> <!-- Basic Test -->
+  </suite> <!-- Java Testing -->
+</testng-results>

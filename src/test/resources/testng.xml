@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Java Testing" verbose="1">
+  <test name="Basic Test">
+    <parameter name="username" value="standard_user"></parameter>
+    <parameter name="invalidUsername" value="invalid_user"></parameter> 
+    <parameter name="password" value="secret_sauce"></parameter> 
+    <parameter name="invalidPassword" value="invalid_user"></parameter> 
+    <parameter name="emptyUsername" value=""></parameter>
+    <parameter name="emptyPassword" value=""></parameter> 
+    <classes>
+        <class name="com.juaracoding.swaglabs.LoginTest"></class>
+    </classes>
+    
+  </test>
+</suite>
