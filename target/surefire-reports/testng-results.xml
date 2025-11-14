@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[<img style='width: 30%' src='../screenshots/addSingleProductToCartTest_01_2025-11-14_22-08-08.png' />]]>
-    </line>
-    <line>
-      <![CDATA[<br /> <strong>../screenshots/addSingleProductToCartTest_01_2025-11-14_22-08-08.png</strong>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-11-14T22:08:03 WIB" name="Java Testing" finished-at="2025-11-14T22:08:09 WIB" duration-ms="5971">
+  <suite started-at="2025-11-14T22:34:33 WIB" name="Java Testing" finished-at="2025-11-14T22:35:15 WIB" duration-ms="42354">
     <groups>
     </groups>
-    <test started-at="2025-11-14T22:08:03 WIB" name="Basic Test" finished-at="2025-11-14T22:08:09 WIB" duration-ms="5971">
-      <class name="com.juaracoding.swaglabs.InventoryTest">
-        <test-method signature="addSingleProductToCartTest(java.lang.String,java.lang.String)[pri:1, instance:com.juaracoding.swaglabs.InventoryTest@501edcf1]" started-at="2025-11-14T22:08:03 WIB" name="addSingleProductToCartTest" finished-at="2025-11-14T22:08:09 WIB" duration-ms="5932" status="PASS">
+    <test started-at="2025-11-14T22:34:33 WIB" name="Basic Test" finished-at="2025-11-14T22:35:15 WIB" duration-ms="42354">
+      <class name="com.juaracoding.swaglabs.LoginTest">
+        <test-method signature="loginSuccessWithValidCredentialTest(java.lang.String,java.lang.String)[pri:1, instance:com.juaracoding.swaglabs.LoginTest@402e37bc]" started-at="2025-11-14T22:34:33 WIB" name="loginSuccessWithValidCredentialTest" finished-at="2025-11-14T22:34:39 WIB" duration-ms="6085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +21,89 @@
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[<img style='width: 30%' src='../screenshots/addSingleProductToCartTest_01_2025-11-14_22-08-08.png' />]]>
-            </line>
-            <line>
-              <![CDATA[<br /> <strong>../screenshots/addSingleProductToCartTest_01_2025-11-14_22-08-08.png</strong>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- addSingleProductToCartTest -->
-      </class> <!-- com.juaracoding.swaglabs.InventoryTest -->
+        </test-method> <!-- loginSuccessWithValidCredentialTest -->
+        <test-method signature="loginFailedWithInvalidUsernameTest(java.lang.String,java.lang.String)[pri:2, instance:com.juaracoding.swaglabs.LoginTest@402e37bc]" started-at="2025-11-14T22:34:39 WIB" name="loginFailedWithInvalidUsernameTest" finished-at="2025-11-14T22:34:46 WIB" duration-ms="6861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithInvalidUsernameTest -->
+        <test-method signature="loginFailedWithInvalidPasswordTest(java.lang.String,java.lang.String)[pri:3, instance:com.juaracoding.swaglabs.LoginTest@402e37bc]" started-at="2025-11-14T22:34:46 WIB" name="loginFailedWithInvalidPasswordTest" finished-at="2025-11-14T22:34:53 WIB" duration-ms="6850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithInvalidPasswordTest -->
+        <test-method signature="loginFailedWithEmptyTest(java.lang.String,java.lang.String)[pri:4, instance:com.juaracoding.swaglabs.LoginTest@402e37bc]" started-at="2025-11-14T22:34:53 WIB" name="loginFailedWithEmptyTest" finished-at="2025-11-14T22:34:59 WIB" duration-ms="6656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithEmptyTest -->
+        <test-method signature="loginFailedWithEmptyUsernameTest(java.lang.String,java.lang.String)[pri:5, instance:com.juaracoding.swaglabs.LoginTest@402e37bc]" started-at="2025-11-14T22:34:59 WIB" name="loginFailedWithEmptyUsernameTest" finished-at="2025-11-14T22:35:06 WIB" duration-ms="6850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithEmptyUsernameTest -->
+        <test-method signature="loginFailedWithEmptyPasswordTest(java.lang.String,java.lang.String)[pri:6, instance:com.juaracoding.swaglabs.LoginTest@402e37bc]" started-at="2025-11-14T22:35:06 WIB" name="loginFailedWithEmptyPasswordTest" finished-at="2025-11-14T22:35:15 WIB" duration-ms="9003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailedWithEmptyPasswordTest -->
+      </class> <!-- com.juaracoding.swaglabs.LoginTest -->
     </test> <!-- Basic Test -->
   </suite> <!-- Java Testing -->
 </testng-results>

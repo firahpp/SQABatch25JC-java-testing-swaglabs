@@ -113,9 +113,32 @@ public class LoginTest extends BaseTest {
       String expected = "Epic sadface: Username is required";
       Thread.sleep(1000);
 
+      
       Assert.assertEquals(actual, expected);
       quitBrowser();
     }
-    
+
+     //Test Case 5: Login with Empty Password
+    @Test(priority = 6)
+    @Parameters({"username", "emptyPassword"})
+    public void loginFailedWithEmptyPasswordTest(String username, String emptyPassword) throws InterruptedException {
+      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+  
+      Thread.sleep(1000);
+      driver.findElement(By.id("user-name")).sendKeys(username);
+      Thread.sleep(1000);
+      driver.findElement(By.id("password")).sendKeys(emptyPassword);
+      Thread.sleep(1000);
+      driver.findElement(By.id("login-button")).click();
+  
+      WebElement errorMessageElement = driver.findElement(By.xpath("//h3[@data-test='error']"));
+      String actual = errorMessageElement.getText();
+      String expected = "Epic sadface: Password is required";
+      Thread.sleep(1000);
+
+      
+      Assert.assertEquals(actual, expected);
+      quitBrowser();
+    }
   }
   
