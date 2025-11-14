@@ -1,45 +1,52 @@
 package com.juaracoding.swaglabs.utils;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
 public class ScreenshotUtil {
 
     /**
-     * Mengambil screenshot dari halaman web saat ini.
-     *
-     * @param driver         WebDriver instance yang sedang berjalan.
-     * @param screenshotName Nama dasar untuk file screenshot. Timestamp akan ditambahkan.
-     * @return Path absolut dari file screenshot yang disimpan.
+     * Private constructor to prevent instantiation of this utility class.
      */
-    public static String captureScreenshot(WebDriver driver, String screenshotName) {
-        // Membuat format nama file dengan timestamp untuk memastikan keunikan
-        String dateName = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        
-        // Mengambil screenshot sebagai file
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        
-        // Menentukan path tujuan
-        // Screenshot akan disimpan di dalam folder "screenshots" di root project
-        String destination = System.getProperty("user.dir") + "/screenshots/" + screenshotName + "_" + dateName + ".png";
-        File finalDestination = new File(destination);
-        
+    private ScreenshotUtil() {
+        // Utility class
+    }
+
+    /**
+     * Takes a screenshot of the current browser window and saves it to a file.
+     *
+     * @param driver   The WebDriver instance.
+     * @param fileName The desired name for the screenshot file (without extension).
+     */
+    public static String takeScreenshot(WebDriver driver, String fileName) {
+        // 1. Convert WebDriver object to TakesScreenshot
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+
+        // 2. Call getScreenshotAs method to create image file
+        File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
+
+        // 3. Define the destination path
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+        String destinationPath = "target/screenshots/" + fileName + "_" + timestamp + ".png";
+        File destinationFile = new File(destinationPath);
+
         try {
-            // Menyalin file screenshot ke tujuan
-            FileUtils.copyFile(source, finalDestination);
+            // Ensure the directory exists
+            destinationFile.getParentFile().mkdirs();
+            // 4. Copy file to destination
+            FileUtils.copyFile(sourceFile, destinationFile);
+            System.out.println("Screenshot saved to: " + destinationFile.getAbsolutePath());
+            return "../screenshots/" + fileName + "_" + timestamp + ".png";
         } catch (IOException e) {
-            System.out.println("Gagal mengambil screenshot: " + e.getMessage());
+            System.err.println("Failed to save screenshot: " + e.getMessage());
+            return null; // Return null if screenshot failed
         }
-        
-        // Mengembalikan path file untuk logging atau reporting
-        return destination;
     }
 }
