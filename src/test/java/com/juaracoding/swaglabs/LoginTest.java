@@ -72,7 +72,7 @@ public class LoginTest extends BaseTest {
       quitBrowser();
     }
 
-    //Test Case 5: Login with Empty Username and password
+    //Test Case 4: Login with Empty Username and password
 
     @Test(priority = 4)
     @Parameters({"emptyUsername", "emptyPassword"})
