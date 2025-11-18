@@ -1,57 +1,82 @@
 package com.juaracoding.swaglabs;
 
-import org.openqa.selenium.By;
+import java.util.HashMap;
+import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITestContext;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
-public class BaseTest {
+import com.juaracoding.swaglabs.listeners.ScreenshotListener;
+import com.juaracoding.swaglabs.pages.LoginPage;
+
+@Listeners(ScreenshotListener.class)
+public abstract class BaseTest {
 
     protected WebDriver driver; //hanya bisa diakses oleh diri sendiri atau turunannya
 
-    //SATU METHOD UNTUK SATU AKSI
+    @BeforeMethod
+    public void setUp(ITestContext context){
+        // 1. Buat objek ChromeOptions
+        ChromeOptions options = new ChromeOptions();
 
-    public void openBrowser(){ //method compose
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        // 2. Siapkan Map untuk menyimpan preferensi
+        Map<String, Object> prefs = new HashMap<String, Object>();
+
+        // -- MENONAKTIFKAN POPUP TERSEBUT --
+        
+        // Matikan fitur "Offer to save passwords"
+        prefs.put("credentials_enable_service", false);
+        
+        // Matikan password manager secara keseluruhan
+        prefs.put("profile.password_manager_enabled", false);
+        
+        // INI YANG PENTING UNTUK GAMBAR KAMU: 
+        // Matikan deteksi kebocoran password (Data Breach warning)
+        prefs.put("profile.password_manager_leak_detection", false);
+        
+        // Opsional: Matikan safebrowsing jika masih muncul (kadang berpengaruh)
+        prefs.put("safebrowsing.enabled", true); 
+
+        // 3. Masukkan preferensi ke dalam options
+        options.setExperimentalOption("prefs", prefs);
+
+        // 4. (Opsional) Tambahkan argument untuk menghindari deteksi bot lainnya
+        options.addArguments("--disable-blink-features=AutomationControlled");
+        options.addArguments("--disable-notifications"); // Mematikan notifikasi "Show Notifications"
+
+        // 5. Jalankan Driver dengan options
+        driver = new ChromeDriver(options);
+        context.setAttribute("driver", driver);
+    
     }
-//     public BaseTest openBrowser() { //method chaining
-//     driver = new FirefoxDriver();
-//     driver.manage().window().maximize();
-//     return this;
-//   }
+
+    @AfterMethod
+    public void teardown(ITestContext context) {
+        if (driver != null) {
+            driver.quit();
+        }
+    
+    }
+
+  public void openBrowser(String url) {
+    driver.get(url);
+  }
 
     public void navigateTo(String url){
         driver.get(url);
     }
-    // public BaseTest navigateTo(String url) { //method chaining
-    //     driver.get(url);
-    //     return this;
-    //   }
 
     public void quitBrowser(){
         driver.quit();
     }
-    // public BaseTest quitBrowser() { //method chaining
-    //     driver.quit();
-    //     return this;
-    //   }
-    public void preTestLogin(String username, String password) throws InterruptedException {
-    openBrowserAndNavigateTo("https://www.saucedemo.com/");
-    Thread.sleep(500);
-    driver.findElement(By.id("user-name")).sendKeys(username);
-    Thread.sleep(500);
-    driver.findElement(By.id("password")).sendKeys(password);
-    Thread.sleep(500);
-    driver.findElement(By.id("login-button")).click();
-    }
 
-    public void openBrowserAndNavigateTo(String url){
-        openBrowser();
-        navigateTo(url);
+    public void preTestLogin(String username, String password) throws InterruptedException {
+     LoginPage loginPage = new LoginPage(driver);
+    loginPage.login(username, password, 100);
     }
     
-    // public void openBrowserAndNavigateTo(String url) { //method chaining
-    //     openBrowser().navigateTo(url);
-    //   }
-
 }

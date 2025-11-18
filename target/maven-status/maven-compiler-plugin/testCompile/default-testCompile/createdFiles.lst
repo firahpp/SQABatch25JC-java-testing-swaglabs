@@ -1,3 +1,7 @@
-com/juaracoding/swaglabs/BaseTest.class
 com/juaracoding/swaglabs/LoginTest.class
+com/juaracoding/swaglabs/pages/LoginPage.class
 com/juaracoding/swaglabs/InventoryTest.class
+com/juaracoding/swaglabs/components/HeaderComponent.class
+com/juaracoding/swaglabs/listeners/ScreenshotListener.class
+com/juaracoding/swaglabs/BaseTest.class
+com/juaracoding/swaglabs/pages/InventoryPage.class

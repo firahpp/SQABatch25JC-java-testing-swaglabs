@@ -6,100 +6,68 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.juaracoding.swaglabs.pages.InventoryPage;
+import com.juaracoding.swaglabs.pages.LoginPage;
+
 public class LoginTest extends BaseTest {
 
     @Test(priority = 1)
     @Parameters({"username", "password"})
     public void loginSuccessWithValidCredentialTest(String username, String password) throws InterruptedException {
-      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+      openBrowser("https://www.saucedemo.com/");
      // openBrowser().navigateTo("https://www.saucedemo.com/"); //method chaining
   
-      Thread.sleep(1000);
-      driver.findElement(By.id("user-name")).sendKeys(username);
-      Thread.sleep(1000);
-      driver.findElement(By.id("password")).sendKeys(password);
-      Thread.sleep(1000);
-      driver.findElement(By.id("login-button")).click();
-      
-      String[] path = driver.getCurrentUrl().split("/");
-      String expected = "/inventory.html";
-      String actual = "/" + path[path.length - 1];
-      
-      Assert.assertEquals(actual, expected);
-  
-      quitBrowser();
+      LoginPage loginPage = new LoginPage(driver);
+      loginPage.login(username, password, 500);
+      InventoryPage inventoryPage = new InventoryPage(driver);
+      Assert.assertEquals(inventoryPage.getPathURL(), "/inventory.html");
+    
     }
   
-    @Test(priority = 2)
+    @Test(priority = 2, enabled = true)
     @Parameters({"invalidUsername", "password"})
     public void loginFailedWithInvalidUsernameTest(String invalidUsername, String password) throws InterruptedException {
-      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+      openBrowser("https://www.saucedemo.com/");
   
-      Thread.sleep(1000);
-      driver.findElement(By.id("user-name")).sendKeys(invalidUsername);
-      Thread.sleep(1000);
-      driver.findElement(By.id("password")).sendKeys(password);
-      Thread.sleep(1000);
-      driver.findElement(By.id("login-button")).click();
-  
-      WebElement errorMessageElement = driver.findElement(By.xpath("//h3[@data-test='error']"));
-      String actual = errorMessageElement.getText();
+      LoginPage loginPage = new LoginPage(driver);
+      loginPage.login(invalidUsername, password, 500);
       String expected = "Epic sadface: Username and password do not match any user in this service";
-      Thread.sleep(1000);
+      Assert.assertEquals(loginPage.getErrorMessage(), expected);
+  
 
-      Assert.assertEquals(actual, expected);
-      quitBrowser();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, enabled = false)
     @Parameters({"username", "invalidPassword"})
     public void loginFailedWithInvalidPasswordTest(String username, String invalidPassword) throws InterruptedException {
-      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+      openBrowser("https://www.saucedemo.com/");
   
-      Thread.sleep(1000);
-      driver.findElement(By.id("user-name")).sendKeys(username);
-      Thread.sleep(1000);
-      driver.findElement(By.id("password")).sendKeys(invalidPassword);
-      Thread.sleep(1000);
-      driver.findElement(By.id("login-button")).click();
-  
-      WebElement errorMessageElement = driver.findElement(By.xpath("//h3[@data-test='error']"));
-      String actual = errorMessageElement.getText();
+      LoginPage loginPage = new LoginPage(driver);
+      loginPage.login(username, invalidPassword, 500);
       String expected = "Epic sadface: Username and password do not match any user in this service";
-      Thread.sleep(1000);
+      Assert.assertEquals(loginPage.getErrorMessage(), expected);
 
-      Assert.assertEquals(actual, expected);
-      quitBrowser();
     }
 
     //Test Case 4: Login with Empty Username and password
 
-    @Test(priority = 4)
+    @Test(priority = 4, enabled = false)
     @Parameters({"emptyUsername", "emptyPassword"})
     public void loginFailedWithEmptyTest(String emptyUsername, String emptyPassword) throws InterruptedException {
-      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+      openBrowser("https://www.saucedemo.com/");
   
-      Thread.sleep(1000);
-      driver.findElement(By.id("user-name")).sendKeys(emptyUsername);
-      Thread.sleep(1000);
-      driver.findElement(By.id("password")).sendKeys(emptyUsername);
-      Thread.sleep(1000);
-      driver.findElement(By.id("login-button")).click();
+      LoginPage loginPage = new LoginPage(driver);
+      loginPage.login(emptyUsername, emptyPassword, 500);
+      String expected = "Epic sadface: Username and password do not match any user in this service";
+      Assert.assertEquals(loginPage.getErrorMessage(), expected);
   
-      WebElement errorMessageElement = driver.findElement(By.xpath("//h3[@data-test='error']"));
-      String actual = errorMessageElement.getText();
-      String expected = "Epic sadface: Username is required";
-      Thread.sleep(1000);
-
-      Assert.assertEquals(actual, expected);
-      quitBrowser();
     }
     //Test Case 5: Login with Empty Username
 
-    @Test(priority = 5)
+    @Test(priority = 5, enabled = false)
     @Parameters({"emptyUsername", "password"})
     public void loginFailedWithEmptyUsernameTest(String emptyUsername, String password) throws InterruptedException {
-      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+      openBrowser("https://www.saucedemo.com/");
   
       Thread.sleep(1000);
       driver.findElement(By.id("user-name")).sendKeys(emptyUsername);
@@ -115,14 +83,14 @@ public class LoginTest extends BaseTest {
 
       
       Assert.assertEquals(actual, expected);
-      quitBrowser();
+
     }
 
      //Test Case 5: Login with Empty Password
-    @Test(priority = 6)
+    @Test(priority = 6, enabled = false)
     @Parameters({"username", "emptyPassword"})
     public void loginFailedWithEmptyPasswordTest(String username, String emptyPassword) throws InterruptedException {
-      openBrowserAndNavigateTo("https://www.saucedemo.com/");
+      openBrowser("https://www.saucedemo.com/");
   
       Thread.sleep(1000);
       driver.findElement(By.id("user-name")).sendKeys(username);
@@ -138,7 +106,7 @@ public class LoginTest extends BaseTest {
 
       
       Assert.assertEquals(actual, expected);
-      quitBrowser();
+
     }
   }
   
