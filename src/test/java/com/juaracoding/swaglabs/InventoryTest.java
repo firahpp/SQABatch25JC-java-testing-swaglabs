@@ -1,9 +1,12 @@
 package com.juaracoding.swaglabs;
 
-import java.time.Duration;
+import java.rmi.server.ExportException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -11,35 +14,64 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.juaracoding.swaglabs.listeners.ScreenshotListener;
 import com.juaracoding.swaglabs.pages.InventoryPage;
-import com.juaracoding.swaglabs.utils.ScreenshotUtil;
 
-@Listeners(ScreenshotListener.class)
+
 public class InventoryTest extends BaseTest {
-  
-  @Test(priority = 1)
+  private InventoryPage inventoryPage;
+
+  @Test(priority = 1, enabled = true)
   @Parameters({"username", "password"})
-  public void addSingleProductToCartTest(String username, String password) throws InterruptedException {
-    
+  public void addSingleProductToChartTest(String username, String password) throws InterruptedException {
+    openBrowser("https://www.saucedemo.com/");
     preTestLogin(username, password);
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-    
-    InventoryPage inventoryPage = new InventoryPage(driver);
+
+    inventoryPage = new InventoryPage(driver);
 
     inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-backpack']");
     inventoryPage.getHeaderComponent().setButtonRemoveCart("//button[@data-test='remove-sauce-labs-backpack']");
+
     inventoryPage.getHeaderComponent().clickButtonAddToCart();
-    
 
-    Assert.assertFalse(inventoryPage.getHeaderComponent().isInvisibleButtonAddToCart()); //ngecek apakah tombol ADD TO CART hilang
-    Assert.assertTrue(inventoryPage.getHeaderComponent().isInvisibleButtonRemoveToCart());
-   
-    Assert.assertEquals(inventoryPage.getHeaderComponent().getTotalCart(), "1 ");
+    Assert.assertFalse(inventoryPage.getHeaderComponent().isVisibleButtonAddToCart());
+    Assert.assertTrue(inventoryPage.getHeaderComponent().isVisibleButtonRemoveToCart());
 
-    
+    Assert.assertEquals(inventoryPage.getHeaderComponent().getTotalCart(), 1);
+  }
 
-    // quitBrowser();
+  @Test(priority = 2, enabled = true)
+  @Parameters({"username", "password"})
+  public void addMultipleProdductToChartTest(String username, String password) throws InterruptedException {
+    openBrowser("https://www.saucedemo.com/");
+    preTestLogin(username, password);
+    List<Boolean> removeButtons = new ArrayList<>();
+
+    inventoryPage = new InventoryPage(driver);
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-backpack']");
+    inventoryPage.getHeaderComponent().clickButtonAddToCart();
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-bike-light']");
+    inventoryPage.getHeaderComponent().clickButtonAddToCart();
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-bolt-t-shirt']");
+    inventoryPage.getHeaderComponent().clickButtonAddToCart();
+
+    inventoryPage.getHeaderComponent().setButtonRemoveCart("//button[@data-test='remove-sauce-labs-backpack']");
+    removeButtons.add(inventoryPage.getHeaderComponent().isVisibleButtonRemoveToCart());
+
+    inventoryPage.getHeaderComponent().setButtonRemoveCart("//button[@data-test='remove-sauce-labs-bike-light']");
+    removeButtons.add(inventoryPage.getHeaderComponent().isVisibleButtonRemoveToCart());
+
+    inventoryPage.getHeaderComponent().setButtonRemoveCart("//button[@data-test='remove-sauce-labs-bolt-t-shirt']");
+    removeButtons.add(inventoryPage.getHeaderComponent().isVisibleButtonRemoveToCart());
+
+    int expected = 3;
+    long actual = removeButtons.stream()
+      .filter(n -> n)
+      .count();
+
+    Assert.assertEquals(actual, expected);
+    Assert.assertEquals(inventoryPage.getHeaderComponent().getTotalCart(), expected);
   }
 }

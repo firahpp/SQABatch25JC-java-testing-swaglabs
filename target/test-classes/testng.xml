@@ -8,9 +8,8 @@
     <parameter name="emptyUsername" value=""></parameter>
     <parameter name="emptyPassword" value=""></parameter> 
     <classes>
-        <!-- <class name="com.juaracoding.swaglabs.tester.authentications.LoginPositiveTest"></class> -->
         <class name="com.juaracoding.swaglabs.LoginTest"></class>
-        <!-- <class name="com.juaracoding.swaglabs.InventoryTest"></class> -->
+        <class name="com.juaracoding.swaglabs.InventoryTest"></class>
     </classes>
     
   </test>
