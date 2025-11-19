@@ -22,7 +22,7 @@ public class InventoryTest extends BaseTest {
 
   @Test(priority = 1, enabled = true)
   @Parameters({"username", "password"})
-  public void addSingleProductToChartTest(String username, String password) throws InterruptedException {
+  public void addSingleProductToCartTest(String username, String password) throws InterruptedException {
     openBrowser("https://www.saucedemo.com/");
     preTestLogin(username, password);
 
@@ -41,7 +41,7 @@ public class InventoryTest extends BaseTest {
 
   @Test(priority = 2, enabled = true)
   @Parameters({"username", "password"})
-  public void addMultipleProdductToChartTest(String username, String password) throws InterruptedException {
+  public void addMultipleProductToCartTest(String username, String password) throws InterruptedException {
     openBrowser("https://www.saucedemo.com/");
     preTestLogin(username, password);
     List<Boolean> removeButtons = new ArrayList<>();
@@ -73,5 +73,24 @@ public class InventoryTest extends BaseTest {
 
     Assert.assertEquals(actual, expected);
     Assert.assertEquals(inventoryPage.getHeaderComponent().getTotalCart(), expected);
+  }
+  @Test(priority = 3, enabled = true)
+  @Parameters({"username", "password"})
+  public void deleteProductFromInventariesPageTest(String username, String password) throws InterruptedException {
+    openBrowser("https://www.saucedemo.com/");
+    preTestLogin(username, password);
+
+    inventoryPage = new InventoryPage(driver);
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-backpack']");
+    inventoryPage.getHeaderComponent().clickButtonAddToCart();
+
+    Assert.assertEquals(inventoryPage.getHeaderComponent().getTotalCart(), 1);
+
+    inventoryPage.getHeaderComponent().setButtonRemoveCart("//button[@data-test='remove-sauce-labs-backpack']");
+    inventoryPage.getHeaderComponent().clickButtonRemoveCart();
+
+    Assert.assertTrue(inventoryPage.getHeaderComponent().isVisibleButtonAddToCart());
+    Assert.assertFalse(inventoryPage.getHeaderComponent().isVisibleCartIcon());
   }
 }

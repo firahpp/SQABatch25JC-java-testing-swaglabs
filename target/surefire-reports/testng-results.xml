@@ -1,72 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-18_21-31-10.png' /></div>]]>
+      <![CDATA[<div><img style='width: 30%' src='../screenshots/addSingleProductToCartTest_success_2025-11-19_19-25-19.png' /></div>]]>
     </line>
     <line>
-      <![CDATA[<div><a href='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-18_21-31-10.png' target='_blank'>loginSuccessWithValidCredentialTest</a></div>]]>
+      <![CDATA[<div><a href='../screenshots/addSingleProductToCartTest_success_2025-11-19_19-25-19.png' target='_blank'>addSingleProductToCartTest</a></div>]]>
     </line>
     <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-18_21-31-15.png' /></div>]]>
+      <![CDATA[<div><img style='width: 30%' src='../screenshots/addMultipleProductToCartTest_success_2025-11-19_19-25-24.png' /></div>]]>
     </line>
     <line>
-      <![CDATA[<div><a href='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-18_21-31-15.png' target='_blank'>loginFailedWithInvalidUsernameTest</a></div>]]>
+      <![CDATA[<div><a href='../screenshots/addMultipleProductToCartTest_success_2025-11-19_19-25-24.png' target='_blank'>addMultipleProductToCartTest</a></div>]]>
     </line>
     <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-18_21-31-20.png' /></div>]]>
+      <![CDATA[<div><img style='width: 30%' src='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-19_19-25-29.png' /></div>]]>
     </line>
     <line>
-      <![CDATA[<div><a href='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-18_21-31-20.png' target='_blank'>loginFailedWithInvalidPasswordTest</a></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyTest_success_2025-11-18_21-31-26.png' /></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><a href='../screenshots/loginFailedWithEmptyTest_success_2025-11-18_21-31-26.png' target='_blank'>loginFailedWithEmptyTest</a></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-18_21-31-34.png' /></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><a href='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-18_21-31-34.png' target='_blank'>loginFailedWithEmptyUsernameTest</a></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-18_21-31-42.png' /></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><a href='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-18_21-31-42.png' target='_blank'>loginFailedWithEmptyPasswordTest</a></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/addSingleProductToChartTest_success_2025-11-18_21-31-46.png' /></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><a href='../screenshots/addSingleProductToChartTest_success_2025-11-18_21-31-46.png' target='_blank'>addSingleProductToChartTest</a></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><img style='width: 30%' src='../screenshots/addMultipleProdductToChartTest_success_2025-11-18_21-31-51.png' /></div>]]>
-    </line>
-    <line>
-      <![CDATA[<div><a href='../screenshots/addMultipleProdductToChartTest_success_2025-11-18_21-31-51.png' target='_blank'>addMultipleProdductToChartTest</a></div>]]>
+      <![CDATA[<div><a href='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-19_19-25-29.png' target='_blank'>deleteProductFromInventariesPageTest</a></div>]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-11-18T21:31:03 WIB" name="Java Testing" finished-at="2025-11-18T21:31:51 WIB" duration-ms="47718">
+  <suite started-at="2025-11-19T19:25:11 WIB" name="Java Testing" finished-at="2025-11-19T19:25:29 WIB" duration-ms="17989">
     <groups>
     </groups>
-    <test started-at="2025-11-18T21:31:03 WIB" name="Basic Test" finished-at="2025-11-18T21:31:51 WIB" duration-ms="47718">
+    <test started-at="2025-11-19T19:25:11 WIB" name="Basic Test" finished-at="2025-11-19T19:25:29 WIB" duration-ms="17989">
       <class name="com.juaracoding.swaglabs.InventoryTest">
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@63a65a25]" started-at="2025-11-18T21:31:42 WIB" name="setUp" finished-at="2025-11-18T21:31:44 WIB" duration-ms="2291" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:11 WIB" name="setUp" finished-at="2025-11-19T19:25:17 WIB" duration-ms="5164" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
+                <![CDATA[org.testng.TestRunner@525d79f0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addSingleProductToChartTest(java.lang.String,java.lang.String)[pri:1, instance:com.juaracoding.swaglabs.InventoryTest@63a65a25]" started-at="2025-11-18T21:31:44 WIB" name="addSingleProductToChartTest" finished-at="2025-11-18T21:31:46 WIB" duration-ms="1547" status="PASS">
+        <test-method signature="addSingleProductToCartTest(java.lang.String,java.lang.String)[pri:1, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:17 WIB" name="addSingleProductToCartTest" finished-at="2025-11-19T19:25:19 WIB" duration-ms="1950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,36 +51,36 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/addSingleProductToChartTest_success_2025-11-18_21-31-46.png' /></div>]]>
+              <![CDATA[<div><img style='width: 30%' src='../screenshots/addSingleProductToCartTest_success_2025-11-19_19-25-19.png' /></div>]]>
             </line>
             <line>
-              <![CDATA[<div><a href='../screenshots/addSingleProductToChartTest_success_2025-11-18_21-31-46.png' target='_blank'>addSingleProductToChartTest</a></div>]]>
+              <![CDATA[<div><a href='../screenshots/addSingleProductToCartTest_success_2025-11-19_19-25-19.png' target='_blank'>addSingleProductToCartTest</a></div>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addSingleProductToChartTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@63a65a25]" started-at="2025-11-18T21:31:46 WIB" name="teardown" finished-at="2025-11-18T21:31:46 WIB" duration-ms="203" status="PASS">
+        </test-method> <!-- addSingleProductToCartTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:19 WIB" name="teardown" finished-at="2025-11-19T19:25:19 WIB" duration-ms="210" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
+                <![CDATA[org.testng.TestRunner@525d79f0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@63a65a25]" started-at="2025-11-18T21:31:46 WIB" name="setUp" finished-at="2025-11-18T21:31:49 WIB" duration-ms="2257" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:19 WIB" name="setUp" finished-at="2025-11-19T19:25:22 WIB" duration-ms="2956" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
+                <![CDATA[org.testng.TestRunner@525d79f0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addMultipleProdductToChartTest(java.lang.String,java.lang.String)[pri:2, instance:com.juaracoding.swaglabs.InventoryTest@63a65a25]" started-at="2025-11-18T21:31:49 WIB" name="addMultipleProdductToChartTest" finished-at="2025-11-18T21:31:50 WIB" duration-ms="1654" status="PASS">
+        <test-method signature="addMultipleProductToCartTest(java.lang.String,java.lang.String)[pri:2, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:22 WIB" name="addMultipleProductToCartTest" finished-at="2025-11-19T19:25:24 WIB" duration-ms="1779" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,18 +95,62 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/addMultipleProdductToChartTest_success_2025-11-18_21-31-51.png' /></div>]]>
+              <![CDATA[<div><img style='width: 30%' src='../screenshots/addMultipleProductToCartTest_success_2025-11-19_19-25-24.png' /></div>]]>
             </line>
             <line>
-              <![CDATA[<div><a href='../screenshots/addMultipleProdductToChartTest_success_2025-11-18_21-31-51.png' target='_blank'>addMultipleProdductToChartTest</a></div>]]>
+              <![CDATA[<div><a href='../screenshots/addMultipleProductToCartTest_success_2025-11-19_19-25-24.png' target='_blank'>addMultipleProductToCartTest</a></div>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addMultipleProdductToChartTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@63a65a25]" started-at="2025-11-18T21:31:51 WIB" name="teardown" finished-at="2025-11-18T21:31:51 WIB" duration-ms="229" status="PASS">
+        </test-method> <!-- addMultipleProductToCartTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:24 WIB" name="teardown" finished-at="2025-11-19T19:25:24 WIB" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
+                <![CDATA[org.testng.TestRunner@525d79f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:24 WIB" name="setUp" finished-at="2025-11-19T19:25:27 WIB" duration-ms="2910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@525d79f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteProductFromInventariesPageTest(java.lang.String,java.lang.String)[pri:3, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:27 WIB" name="deleteProductFromInventariesPageTest" finished-at="2025-11-19T19:25:29 WIB" duration-ms="1587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div><img style='width: 30%' src='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-19_19-25-29.png' /></div>]]>
+            </line>
+            <line>
+              <![CDATA[<div><a href='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-19_19-25-29.png' target='_blank'>deleteProductFromInventariesPageTest</a></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteProductFromInventariesPageTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.InventoryTest@1d082e88]" started-at="2025-11-19T19:25:29 WIB" name="teardown" finished-at="2025-11-19T19:25:29 WIB" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@525d79f0]]>
               </value>
             </param>
           </params>
@@ -144,272 +158,6 @@
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.juaracoding.swaglabs.InventoryTest -->
-      <class name="com.juaracoding.swaglabs.LoginTest">
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:03 WIB" name="setUp" finished-at="2025-11-18T21:31:07 WIB" duration-ms="3671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginSuccessWithValidCredentialTest(java.lang.String,java.lang.String)[pri:1, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:07 WIB" name="loginSuccessWithValidCredentialTest" finished-at="2025-11-18T21:31:09 WIB" duration-ms="2613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-18_21-31-10.png' /></div>]]>
-            </line>
-            <line>
-              <![CDATA[<div><a href='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-18_21-31-10.png' target='_blank'>loginSuccessWithValidCredentialTest</a></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginSuccessWithValidCredentialTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:10 WIB" name="teardown" finished-at="2025-11-18T21:31:10 WIB" duration-ms="233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:10 WIB" name="setUp" finished-at="2025-11-18T21:31:12 WIB" duration-ms="2440" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginFailedWithInvalidUsernameTest(java.lang.String,java.lang.String)[pri:2, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:12 WIB" name="loginFailedWithInvalidUsernameTest" finished-at="2025-11-18T21:31:15 WIB" duration-ms="2603" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-18_21-31-15.png' /></div>]]>
-            </line>
-            <line>
-              <![CDATA[<div><a href='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-18_21-31-15.png' target='_blank'>loginFailedWithInvalidUsernameTest</a></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginFailedWithInvalidUsernameTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:15 WIB" name="teardown" finished-at="2025-11-18T21:31:15 WIB" duration-ms="186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:15 WIB" name="setUp" finished-at="2025-11-18T21:31:18 WIB" duration-ms="2447" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginFailedWithInvalidPasswordTest(java.lang.String,java.lang.String)[pri:3, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:18 WIB" name="loginFailedWithInvalidPasswordTest" finished-at="2025-11-18T21:31:20 WIB" duration-ms="2576" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalid_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-18_21-31-20.png' /></div>]]>
-            </line>
-            <line>
-              <![CDATA[<div><a href='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-18_21-31-20.png' target='_blank'>loginFailedWithInvalidPasswordTest</a></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginFailedWithInvalidPasswordTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:20 WIB" name="teardown" finished-at="2025-11-18T21:31:21 WIB" duration-ms="284" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:21 WIB" name="setUp" finished-at="2025-11-18T21:31:23 WIB" duration-ms="2491" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginFailedWithEmptyTest(java.lang.String,java.lang.String)[pri:4, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:23 WIB" name="loginFailedWithEmptyTest" finished-at="2025-11-18T21:31:26 WIB" duration-ms="2688" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyTest_success_2025-11-18_21-31-26.png' /></div>]]>
-            </line>
-            <line>
-              <![CDATA[<div><a href='../screenshots/loginFailedWithEmptyTest_success_2025-11-18_21-31-26.png' target='_blank'>loginFailedWithEmptyTest</a></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginFailedWithEmptyTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:26 WIB" name="teardown" finished-at="2025-11-18T21:31:26 WIB" duration-ms="223" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:26 WIB" name="setUp" finished-at="2025-11-18T21:31:29 WIB" duration-ms="2751" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginFailedWithEmptyUsernameTest(java.lang.String,java.lang.String)[pri:5, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:29 WIB" name="loginFailedWithEmptyUsernameTest" finished-at="2025-11-18T21:31:34 WIB" duration-ms="5105" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-18_21-31-34.png' /></div>]]>
-            </line>
-            <line>
-              <![CDATA[<div><a href='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-18_21-31-34.png' target='_blank'>loginFailedWithEmptyUsernameTest</a></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginFailedWithEmptyUsernameTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:34 WIB" name="teardown" finished-at="2025-11-18T21:31:35 WIB" duration-ms="180" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:35 WIB" name="setUp" finished-at="2025-11-18T21:31:37 WIB" duration-ms="2388" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginFailedWithEmptyPasswordTest(java.lang.String,java.lang.String)[pri:6, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:37 WIB" name="loginFailedWithEmptyPasswordTest" finished-at="2025-11-18T21:31:42 WIB" duration-ms="4741" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-18_21-31-42.png' /></div>]]>
-            </line>
-            <line>
-              <![CDATA[<div><a href='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-18_21-31-42.png' target='_blank'>loginFailedWithEmptyPasswordTest</a></div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginFailedWithEmptyPasswordTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.juaracoding.swaglabs.LoginTest@7f1302d6]" started-at="2025-11-18T21:31:42 WIB" name="teardown" finished-at="2025-11-18T21:31:42 WIB" duration-ms="231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@37095ded]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.juaracoding.swaglabs.LoginTest -->
     </test> <!-- Basic Test -->
   </suite> <!-- Java Testing -->
 </testng-results>

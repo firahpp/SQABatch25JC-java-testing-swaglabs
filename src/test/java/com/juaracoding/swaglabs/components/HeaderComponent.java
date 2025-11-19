@@ -57,6 +57,13 @@ public class HeaderComponent {
       return false;
     }
   }
+  public boolean isVisibleCartIcon() {
+    try {
+      return driver.findElement(cartIcon).isDisplayed();
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
 
   public String getTextButtonAddToCart() {
     return driver.findElement(buttonAddToCart).getText();

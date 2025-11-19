@@ -50,6 +50,7 @@ public abstract class BaseTest {
 
         // 5. Jalankan Driver dengan options
         driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
         context.setAttribute("driver", driver);
     
     }

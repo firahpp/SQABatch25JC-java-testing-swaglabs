@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="48.308" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="18.749" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/surefire/surefirebooter-20251118213102738_3.jar /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/surefire 2025-11-18T21-31-02_602-jvmRun1 surefire-20251118213102738_1tmp surefire_0-20251118213102738_2tmp"/>
+    <property name="sun.java.command" value="/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/surefire/surefirebooter-20251119192510897_3.jar /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/surefire 2025-11-19T19-25-10_659-jvmRun1 surefire-20251119192510897_1tmp surefire_0-20251119192510897_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/test-classes:/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/classes:/Users/fauzanfr/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/Users/fauzanfr/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/fauzanfr/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/fauzanfr/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/fauzanfr/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-java/4.27.0/selenium-java-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-api/4.27.0/selenium-api-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.27.0/selenium-chrome-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.27.0/selenium-chromium-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-json/4.27.0/selenium-json-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.27.0/selenium-manager-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.27.0/selenium-devtools-v129-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.27.0/selenium-devtools-v130-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v131/4.27.0/selenium-devtools-v131-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.27.0/selenium-devtools-v85-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.27.0/selenium-edge-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.27.0/selenium-firefox-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-http/4.27.0/selenium-http-4.27.0.jar:/Users/fauzanfr/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.27.0/selenium-ie-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.27.0/selenium-remote-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/fauzanfr/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/fauzanfr/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/fauzanfr/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/fauzanfr/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/fauzanfr/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/fauzanfr/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-api/1.44.1/opentelemetry-api-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-context/1.44.1/opentelemetry-context-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.44.1/opentelemetry-exporter-logging-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.44.1/opentelemetry-sdk-common-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.44.1/opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.44.1/opentelemetry-sdk-extension-autoconfigure-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.44.1-alpha/opentelemetry-api-incubator-1.44.1-alpha.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.44.1/opentelemetry-sdk-trace-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.44.1/opentelemetry-sdk-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.44.1/opentelemetry-sdk-metrics-1.44.1.jar:/Users/fauzanfr/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.44.1/opentelemetry-sdk-logs-1.44.1.jar:/Users/fauzanfr/.m2/repository/net/bytebuddy/byte-buddy/1.15.10/byte-buddy-1.15.10.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-os/4.27.0/selenium-os-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.27.0/selenium-safari-driver-4.27.0.jar:/Users/fauzanfr/.m2/repository/org/seleniumhq/selenium/selenium-support/4.27.0/selenium-support-4.27.0.jar:/Users/fauzanfr/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/surefire/surefirebooter-20251118213102738_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/surefire/surefirebooter-20251119192510897_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25"/>
@@ -60,73 +60,28 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="loginSuccessWithValidCredentialTest[standard_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.LoginTest" time="2.609">
-    <system-err><![CDATA[Nov 18, 2025 9:31:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="addSingleProductToCartTest[standard_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.InventoryTest" time="1.954">
+    <system-err><![CDATA[Nov 19, 2025 7:25:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Nov 19, 2025 7:25:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="loginFailedWithInvalidUsernameTest[invalid_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.LoginTest" time="2.602">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/loginSuccessWithValidCredentialTest_success_2025-11-18_21-31-10.png
+  <testcase name="addMultipleProductToCartTest[standard_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.InventoryTest" time="1.779">
+    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/addSingleProductToCartTest_success_2025-11-19_19-25-19.png
 ]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Nov 19, 2025 7:25:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Nov 19, 2025 7:25:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="loginFailedWithInvalidPasswordTest[standard_user, invalid_user](1)" classname="com.juaracoding.swaglabs.LoginTest" time="2.575">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-18_21-31-15.png
+  <testcase name="deleteProductFromInventariesPageTest[standard_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.InventoryTest" time="1.588">
+    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/addMultipleProductToCartTest_success_2025-11-19_19-25-24.png
 ]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Nov 19, 2025 7:25:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="loginFailedWithEmptyTest[, ](1)" classname="com.juaracoding.swaglabs.LoginTest" time="2.686">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-18_21-31-20.png
-]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="loginFailedWithEmptyUsernameTest[, secret_sauce](1)" classname="com.juaracoding.swaglabs.LoginTest" time="5.102">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/loginFailedWithEmptyTest_success_2025-11-18_21-31-26.png
-]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="loginFailedWithEmptyPasswordTest[standard_user, ](1)" classname="com.juaracoding.swaglabs.LoginTest" time="4.738">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-18_21-31-34.png
-]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="addSingleProductToChartTest[standard_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.InventoryTest" time="1.545">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-18_21-31-42.png
-]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="addMultipleProdductToChartTest[standard_user, secret_sauce](1)" classname="com.juaracoding.swaglabs.InventoryTest" time="1.65">
-    <system-out><![CDATA[Screenshot saved to: /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/target/screenshots/addSingleProductToChartTest_success_2025-11-18_21-31-46.png
-]]></system-out>
-    <system-err><![CDATA[Nov 18, 2025 9:31:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 142
-Nov 18, 2025 9:31:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Nov 19, 2025 7:25:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 142.0.7444.162. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
