@@ -52,6 +52,7 @@ public abstract class BaseTest {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         context.setAttribute("driver", driver);
+        openBrowser("https://www.saucedemo.com/");
     
     }
 

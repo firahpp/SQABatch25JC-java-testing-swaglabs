@@ -14,9 +14,7 @@ public class LoginTest extends BaseTest {
     @Test(priority = 1)
     @Parameters({"username", "password"})
     public void loginSuccessWithValidCredentialTest(String username, String password) throws InterruptedException {
-      openBrowser("https://www.saucedemo.com/");
-     // openBrowser().navigateTo("https://www.saucedemo.com/"); //method chaining
-  
+     
       LoginPage loginPage = new LoginPage(driver);
       loginPage.login(username, password, 500);
       InventoryPage inventoryPage = new InventoryPage(driver);
@@ -27,7 +25,6 @@ public class LoginTest extends BaseTest {
     @Test(priority = 2, enabled = true)
     @Parameters({"invalidUsername", "password"})
     public void loginFailedWithInvalidUsernameTest(String invalidUsername, String password) throws InterruptedException {
-      openBrowser("https://www.saucedemo.com/");
   
       LoginPage loginPage = new LoginPage(driver);
       loginPage.login(invalidUsername, password, 500);
@@ -40,7 +37,6 @@ public class LoginTest extends BaseTest {
     @Test(priority = 3, enabled = true)
     @Parameters({"username", "invalidPassword"})
     public void loginFailedWithInvalidPasswordTest(String username, String invalidPassword) throws InterruptedException {
-      openBrowser("https://www.saucedemo.com/");
   
       LoginPage loginPage = new LoginPage(driver);
       loginPage.login(username, invalidPassword, 500);
@@ -54,7 +50,6 @@ public class LoginTest extends BaseTest {
     @Test(priority = 4, enabled = true)
     @Parameters({"emptyUsername", "emptyPassword"})
     public void loginFailedWithEmptyTest(String emptyUsername, String emptyPassword) throws InterruptedException {
-      openBrowser("https://www.saucedemo.com/");
   
       LoginPage loginPage = new LoginPage(driver);
       loginPage.login(emptyUsername, emptyPassword, 500);
@@ -67,7 +62,6 @@ public class LoginTest extends BaseTest {
     @Test(priority = 5, enabled = true)
     @Parameters({"emptyUsername", "password"})
     public void loginFailedWithEmptyUsernameTest(String emptyUsername, String password) throws InterruptedException {
-      openBrowser("https://www.saucedemo.com/");
   
       Thread.sleep(1000);
       driver.findElement(By.id("user-name")).sendKeys(emptyUsername);
@@ -90,7 +84,6 @@ public class LoginTest extends BaseTest {
     @Test(priority = 6, enabled = true)
     @Parameters({"username", "emptyPassword"})
     public void loginFailedWithEmptyPasswordTest(String username, String emptyPassword) throws InterruptedException {
-      openBrowser("https://www.saucedemo.com/");
   
       Thread.sleep(1000);
       driver.findElement(By.id("user-name")).sendKeys(username);

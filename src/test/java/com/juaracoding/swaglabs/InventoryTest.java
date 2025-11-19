@@ -15,6 +15,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.juaracoding.swaglabs.pages.InventoryPage;
+import com.juaracoding.swaglabs.utils.MiscUtil;
 
 
 public class InventoryTest extends BaseTest {
@@ -23,7 +24,6 @@ public class InventoryTest extends BaseTest {
   @Test(priority = 1, enabled = true)
   @Parameters({"username", "password"})
   public void addSingleProductToCartTest(String username, String password) throws InterruptedException {
-    openBrowser("https://www.saucedemo.com/");
     preTestLogin(username, password);
 
     inventoryPage = new InventoryPage(driver);
@@ -42,7 +42,6 @@ public class InventoryTest extends BaseTest {
   @Test(priority = 2, enabled = true)
   @Parameters({"username", "password"})
   public void addMultipleProductToCartTest(String username, String password) throws InterruptedException {
-    openBrowser("https://www.saucedemo.com/");
     preTestLogin(username, password);
     List<Boolean> removeButtons = new ArrayList<>();
 
@@ -77,7 +76,6 @@ public class InventoryTest extends BaseTest {
   @Test(priority = 3, enabled = true)
   @Parameters({"username", "password"})
   public void deleteProductFromInventariesPageTest(String username, String password) throws InterruptedException {
-    openBrowser("https://www.saucedemo.com/");
     preTestLogin(username, password);
 
     inventoryPage = new InventoryPage(driver);
@@ -92,5 +90,15 @@ public class InventoryTest extends BaseTest {
 
     Assert.assertTrue(inventoryPage.getHeaderComponent().isVisibleButtonAddToCart());
     Assert.assertFalse(inventoryPage.getHeaderComponent().isVisibleCartIcon());
+  }
+  @Test(priority = 4, enabled = true)
+  @Parameters({"username", "password"})
+  public void orderLowToHighBasePriceTest(String username, String password) throws InterruptedException {  
+    preTestLogin(username, password);
+
+    inventoryPage = new InventoryPage(driver);
+    inventoryPage.selectLowToHigh();
+
+    Assert.assertTrue(MiscUtil.isSorted(inventoryPage.getPrices()));
   }
 }

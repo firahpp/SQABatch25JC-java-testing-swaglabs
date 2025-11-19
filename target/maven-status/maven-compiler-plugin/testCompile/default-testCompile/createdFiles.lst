@@ -5,3 +5,4 @@ com/juaracoding/swaglabs/components/HeaderComponent.class
 com/juaracoding/swaglabs/listeners/ScreenshotListener.class
 com/juaracoding/swaglabs/BaseTest.class
 com/juaracoding/swaglabs/pages/InventoryPage.class
+com/juaracoding/swaglabs/utils/MiscUtil.class
