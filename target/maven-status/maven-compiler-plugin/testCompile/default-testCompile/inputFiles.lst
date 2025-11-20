@@ -1,8 +1,13 @@
-/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/LoginPage.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/components/NavbarComponent.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/InventoryTest.java
-/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/utils/MiscUtil.java
-/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/components/HeaderComponent.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/listeners/SendEmailReporter.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/LoginTest.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/BaseTest.java
-/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/InventoryPage.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/components/BaseComponent.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/listeners/ScreenshotListener.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/LoginPage.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/BasePage.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/utils/MiscUtil.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/components/HeaderComponent.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/utils/MailUtil.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/InventoryPage.java

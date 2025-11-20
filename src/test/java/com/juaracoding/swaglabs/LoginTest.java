@@ -1,7 +1,5 @@
 package com.juaracoding.swaglabs;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -11,7 +9,7 @@ import com.juaracoding.swaglabs.pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = true)
     @Parameters({"username", "password"})
     public void loginSuccessWithValidCredentialTest(String username, String password) throws InterruptedException {
      
@@ -63,20 +61,10 @@ public class LoginTest extends BaseTest {
     @Parameters({"emptyUsername", "password"})
     public void loginFailedWithEmptyUsernameTest(String emptyUsername, String password) throws InterruptedException {
   
-      Thread.sleep(1000);
-      driver.findElement(By.id("user-name")).sendKeys(emptyUsername);
-      Thread.sleep(1000);
-      driver.findElement(By.id("password")).sendKeys(password);
-      Thread.sleep(1000);
-      driver.findElement(By.id("login-button")).click();
-  
-      WebElement errorMessageElement = driver.findElement(By.xpath("//h3[@data-test='error']"));
-      String actual = errorMessageElement.getText();
+      LoginPage loginPage = new LoginPage(driver);
+      loginPage.login(emptyUsername, password, 500);
       String expected = "Epic sadface: Username is required";
-      Thread.sleep(1000);
-
-      
-      Assert.assertEquals(actual, expected);
+      Assert.assertEquals(loginPage.getErrorMessage(), expected);
 
     }
 
@@ -85,20 +73,10 @@ public class LoginTest extends BaseTest {
     @Parameters({"username", "emptyPassword"})
     public void loginFailedWithEmptyPasswordTest(String username, String emptyPassword) throws InterruptedException {
   
-      Thread.sleep(1000);
-      driver.findElement(By.id("user-name")).sendKeys(username);
-      Thread.sleep(1000);
-      driver.findElement(By.id("password")).sendKeys(emptyPassword);
-      Thread.sleep(1000);
-      driver.findElement(By.id("login-button")).click();
-  
-      WebElement errorMessageElement = driver.findElement(By.xpath("//h3[@data-test='error']"));
-      String actual = errorMessageElement.getText();
+      LoginPage loginPage = new LoginPage(driver);
+      loginPage.login(username, emptyPassword, 500);
       String expected = "Epic sadface: Password is required";
-      Thread.sleep(1000);
-
-      
-      Assert.assertEquals(actual, expected);
+      Assert.assertEquals(loginPage.getErrorMessage(), expected);
 
     }
   }

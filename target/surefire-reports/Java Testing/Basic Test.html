@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Basic Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 19 20:54:37 WIB 2025</td>
+<td>Started on:</td><td>Thu Nov 20 20:05:45 WIB 2025</td>
 </tr>
-<tr><td>Total time:</td><td>58 seconds (58299 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59769 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,103 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juaracoding.swaglabs.InventoryTest.resetApplicationSateAfterProductAddTest()'><b>resetApplicationSateAfterProductAddTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-407263135" onClick='toggleBox("Output-407263135", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-407263135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-407263135">
+<div><img style='width: 30%' src='../screenshots/resetApplicationSateAfterProductAddTest_fail_2025-11-20_20-06-45.png' /></div><br/>
+<div><a href='../screenshots/resetApplicationSateAfterProductAddTest_fail_2025-11-20_20-06-45.png' target='_blank'>resetApplicationSateAfterProductAddTest</a></div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad4e2cb829ca3f536ffb59ce7b84da32, clickElement {id=f.97B612A2B9F2D673CAD39897BDC07779.d.2A4684F9909EDE117C2F8E77D08D4818.e.23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/5j/brbg8w1j4qv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55712}, goog:processID: 16679, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55712/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (ad4e2cb829ca3f536ffb59ce7b84da32)] -&gt; id: reset_sidebar_link]
+Session ID: ad4e2cb829ca3f536ffb59ce7b84da32
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.juaracoding.swaglabs.components.NavbarComponent.clickResetSideBar(NavbarComponent.java:19)
+	at com.juaracoding.swaglabs.InventoryTest.resetApplicationSateAfterProductAddTest(InventoryTest.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407263135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace407263135'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad4e2cb829ca3f536ffb59ce7b84da32, clickElement {id=f.97B612A2B9F2D673CAD39897BDC07779.d.2A4684F9909EDE117C2F8E77D08D4818.e.23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/5j/brbg8w1j4qv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55712}, goog:processID: 16679, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55712/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (ad4e2cb829ca3f536ffb59ce7b84da32)] -&gt; id: reset_sidebar_link]
+Session ID: ad4e2cb829ca3f536ffb59ce7b84da32
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.juaracoding.swaglabs.components.NavbarComponent.clickResetSideBar(NavbarComponent.java:19)
+	at com.juaracoding.swaglabs.InventoryTest.resetApplicationSateAfterProductAddTest(InventoryTest.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.juaracoding.swaglabs.InventoryTest@2bbf180e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,135 +173,148 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithEmptyTest()'><b>loginFailedWithEmptyTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: , <br/>
-<a href="#Output-431164562" onClick='toggleBox("Output-431164562", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.juaracoding.swaglabs.InventoryTest.forbidenAccessToInventoryPageWithoutLoginTest()'><b>forbidenAccessToInventoryPageWithoutLoginTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br/>
+<a href="#Output-302059473" onClick='toggleBox("Output-302059473", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-431164562" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-431164562">
-<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyTest_success_2025-11-19_20-54-57.png' /></div><br/>
-<div><a href='../screenshots/loginFailedWithEmptyTest_success_2025-11-19_20-54-57.png' target='_blank'>loginFailedWithEmptyTest</a></div><br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.swaglabs.LoginTest@23529fee</td></tr>
-<tr>
-<td title='com.juaracoding.swaglabs.InventoryTest.addMultipleProductToCartTest()'><b>addMultipleProductToCartTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
-<a href="#Output-312565954" onClick='toggleBox("Output-312565954", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-312565954" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-312565954">
-<div><img style='width: 30%' src='../screenshots/addMultipleProductToCartTest_success_2025-11-19_20-55-26.png' /></div><br/>
-<div><a href='../screenshots/addMultipleProductToCartTest_success_2025-11-19_20-55-26.png' target='_blank'>addMultipleProductToCartTest</a></div><br/>
+<a href="#Output-302059473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-302059473">
+<div><img style='width: 30%' src='../screenshots/forbidenAccessToInventoryPageWithoutLoginTest_success_2025-11-20_20-06-40.png' /></div><br/>
+<div><a href='../screenshots/forbidenAccessToInventoryPageWithoutLoginTest_success_2025-11-20_20-06-40.png' target='_blank'>forbidenAccessToInventoryPageWithoutLoginTest</a></div><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.juaracoding.swaglabs.InventoryTest@318ba8c8</td></tr>
-<tr>
-<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithInvalidPasswordTest()'><b>loginFailedWithInvalidPasswordTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: standard_user, invalid_user<br/>
-<a href="#Output-1687627235" onClick='toggleBox("Output-1687627235", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1687627235" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1687627235">
-<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-19_20-54-52.png' /></div><br/>
-<div><a href='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-19_20-54-52.png' target='_blank'>loginFailedWithInvalidPasswordTest</a></div><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.swaglabs.LoginTest@23529fee</td></tr>
-<tr>
-<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithEmptyUsernameTest()'><b>loginFailedWithEmptyUsernameTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: , secret_sauce<br/>
-<a href="#Output-2108440536" onClick='toggleBox("Output-2108440536", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2108440536" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2108440536">
-<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-19_20-55-06.png' /></div><br/>
-<div><a href='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-19_20-55-06.png' target='_blank'>loginFailedWithEmptyUsernameTest</a></div><br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>com.juaracoding.swaglabs.LoginTest@23529fee</td></tr>
+<td>com.juaracoding.swaglabs.InventoryTest@2bbf180e</td></tr>
 <tr>
 <td title='com.juaracoding.swaglabs.InventoryTest.orderLowToHighBasePriceTest()'><b>orderLowToHighBasePriceTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
-<a href="#Output-1210600718" onClick='toggleBox("Output-1210600718", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1409978427" onClick='toggleBox("Output-1409978427", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1210600718" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1210600718">
-<div><img style='width: 30%' src='../screenshots/orderLowToHighBasePriceTest_success_2025-11-19_20-55-35.png' /></div><br/>
-<div><a href='../screenshots/orderLowToHighBasePriceTest_success_2025-11-19_20-55-35.png' target='_blank'>orderLowToHighBasePriceTest</a></div><br/>
+<a href="#Output-1409978427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1409978427">
+<div><img style='width: 30%' src='../screenshots/orderLowToHighBasePriceTest_success_2025-11-20_20-06-36.png' /></div><br/>
+<div><a href='../screenshots/orderLowToHighBasePriceTest_success_2025-11-20_20-06-36.png' target='_blank'>orderLowToHighBasePriceTest</a></div><br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
-<td>com.juaracoding.swaglabs.InventoryTest@318ba8c8</td></tr>
+<td>0</td>
+<td>com.juaracoding.swaglabs.InventoryTest@2bbf180e</td></tr>
+<tr>
+<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithInvalidPasswordTest()'><b>loginFailedWithInvalidPasswordTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: standard_user, invalid_user<br/>
+<a href="#Output-577127077" onClick='toggleBox("Output-577127077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-577127077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-577127077">
+<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-20_20-05-59.png' /></div><br/>
+<div><a href='../screenshots/loginFailedWithInvalidPasswordTest_success_2025-11-20_20-05-59.png' target='_blank'>loginFailedWithInvalidPasswordTest</a></div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.swaglabs.LoginTest@38c5cc4c</td></tr>
 <tr>
 <td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithInvalidUsernameTest()'><b>loginFailedWithInvalidUsernameTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: invalid_user, secret_sauce<br/>
-<a href="#Output-1244867001" onClick='toggleBox("Output-1244867001", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-509864971" onClick='toggleBox("Output-509864971", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1244867001" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1244867001">
-<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-19_20-54-47.png' /></div><br/>
-<div><a href='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-19_20-54-47.png' target='_blank'>loginFailedWithInvalidUsernameTest</a></div><br/>
+<a href="#Output-509864971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509864971">
+<div><img style='width: 30%' src='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-20_20-05-55.png' /></div><br/>
+<div><a href='../screenshots/loginFailedWithInvalidUsernameTest_success_2025-11-20_20-05-55.png' target='_blank'>loginFailedWithInvalidUsernameTest</a></div><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.juaracoding.swaglabs.LoginTest@23529fee</td></tr>
+<td>com.juaracoding.swaglabs.LoginTest@38c5cc4c</td></tr>
 <tr>
-<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithEmptyPasswordTest()'><b>loginFailedWithEmptyPasswordTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: standard_user, <br/>
-<a href="#Output-1716551994" onClick='toggleBox("Output-1716551994", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithEmptyUsernameTest()'><b>loginFailedWithEmptyUsernameTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: , secret_sauce<br/>
+<a href="#Output-1816468636" onClick='toggleBox("Output-1816468636", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1716551994" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1716551994">
-<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-19_20-55-16.png' /></div><br/>
-<div><a href='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-19_20-55-16.png' target='_blank'>loginFailedWithEmptyPasswordTest</a></div><br/>
+<a href="#Output-1816468636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1816468636">
+<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-20_20-06-07.png' /></div><br/>
+<div><a href='../screenshots/loginFailedWithEmptyUsernameTest_success_2025-11-20_20-06-07.png' target='_blank'>loginFailedWithEmptyUsernameTest</a></div><br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>com.juaracoding.swaglabs.LoginTest@23529fee</td></tr>
-<tr>
-<td title='com.juaracoding.swaglabs.InventoryTest.deleteProductFromInventariesPageTest()'><b>deleteProductFromInventariesPageTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
-<a href="#Output-1538745405" onClick='toggleBox("Output-1538745405", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1538745405" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1538745405">
-<div><img style='width: 30%' src='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-19_20-55-30.png' /></div><br/>
-<div><a href='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-19_20-55-30.png' target='_blank'>deleteProductFromInventariesPageTest</a></div><br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.swaglabs.InventoryTest@318ba8c8</td></tr>
+<td>0</td>
+<td>com.juaracoding.swaglabs.LoginTest@38c5cc4c</td></tr>
 <tr>
 <td title='com.juaracoding.swaglabs.InventoryTest.addSingleProductToCartTest()'><b>addSingleProductToCartTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
-<a href="#Output-80722676" onClick='toggleBox("Output-80722676", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1974606907" onClick='toggleBox("Output-1974606907", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-80722676" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-80722676">
-<div><img style='width: 30%' src='../screenshots/addSingleProductToCartTest_success_2025-11-19_20-55-21.png' /></div><br/>
-<div><a href='../screenshots/addSingleProductToCartTest_success_2025-11-19_20-55-21.png' target='_blank'>addSingleProductToCartTest</a></div><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.swaglabs.InventoryTest@318ba8c8</td></tr>
-<tr>
-<td title='com.juaracoding.swaglabs.LoginTest.loginSuccessWithValidCredentialTest()'><b>loginSuccessWithValidCredentialTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: standard_user, secret_sauce<br/>
-<a href="#Output-593103894" onClick='toggleBox("Output-593103894", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-593103894" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-593103894">
-<div><img style='width: 30%' src='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-19_20-54-42.png' /></div><br/>
-<div><a href='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-19_20-54-42.png' target='_blank'>loginSuccessWithValidCredentialTest</a></div><br/>
+<a href="#Output-1974606907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1974606907">
+<div><img style='width: 30%' src='../screenshots/addSingleProductToCartTest_success_2025-11-20_20-06-17.png' /></div><br/>
+<div><a href='../screenshots/addSingleProductToCartTest_success_2025-11-20_20-06-17.png' target='_blank'>addSingleProductToCartTest</a></div><br/>
 </div>
 </td>
 <td></td>
 <td>1</td>
-<td>com.juaracoding.swaglabs.LoginTest@23529fee</td></tr>
+<td>com.juaracoding.swaglabs.InventoryTest@2bbf180e</td></tr>
+<tr>
+<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithEmptyPasswordTest()'><b>loginFailedWithEmptyPasswordTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: standard_user, <br/>
+<a href="#Output-1991290395" onClick='toggleBox("Output-1991290395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1991290395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1991290395">
+<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-20_20-06-11.png' /></div><br/>
+<div><a href='../screenshots/loginFailedWithEmptyPasswordTest_success_2025-11-20_20-06-11.png' target='_blank'>loginFailedWithEmptyPasswordTest</a></div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.swaglabs.LoginTest@38c5cc4c</td></tr>
+<tr>
+<td title='com.juaracoding.swaglabs.LoginTest.loginFailedWithEmptyTest()'><b>loginFailedWithEmptyTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: , <br/>
+<a href="#Output-1168079523" onClick='toggleBox("Output-1168079523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1168079523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1168079523">
+<div><img style='width: 30%' src='../screenshots/loginFailedWithEmptyTest_success_2025-11-20_20-06-03.png' /></div><br/>
+<div><a href='../screenshots/loginFailedWithEmptyTest_success_2025-11-20_20-06-03.png' target='_blank'>loginFailedWithEmptyTest</a></div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.swaglabs.LoginTest@38c5cc4c</td></tr>
+<tr>
+<td title='com.juaracoding.swaglabs.InventoryTest.addMultipleProductToCartTest()'><b>addMultipleProductToCartTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-873168630" onClick='toggleBox("Output-873168630", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-873168630" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-873168630">
+<div><img style='width: 30%' src='../screenshots/addMultipleProductToCartTest_success_2025-11-20_20-06-25.png' /></div><br/>
+<div><a href='../screenshots/addMultipleProductToCartTest_success_2025-11-20_20-06-25.png' target='_blank'>addMultipleProductToCartTest</a></div><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.swaglabs.InventoryTest@2bbf180e</td></tr>
+<tr>
+<td title='com.juaracoding.swaglabs.InventoryTest.deleteProductFromInventariesPageTest()'><b>deleteProductFromInventariesPageTest</b><br>Test class: com.juaracoding.swaglabs.InventoryTest<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-2096194236" onClick='toggleBox("Output-2096194236", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096194236" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096194236">
+<div><img style='width: 30%' src='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-20_20-06-31.png' /></div><br/>
+<div><a href='../screenshots/deleteProductFromInventariesPageTest_success_2025-11-20_20-06-31.png' target='_blank'>deleteProductFromInventariesPageTest</a></div><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.swaglabs.InventoryTest@2bbf180e</td></tr>
+<tr>
+<td title='com.juaracoding.swaglabs.LoginTest.loginSuccessWithValidCredentialTest()'><b>loginSuccessWithValidCredentialTest</b><br>Test class: com.juaracoding.swaglabs.LoginTest<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-1817789863" onClick='toggleBox("Output-1817789863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1817789863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1817789863">
+<div><img style='width: 30%' src='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-20_20-05-50.png' /></div><br/>
+<div><a href='../screenshots/loginSuccessWithValidCredentialTest_success_2025-11-20_20-05-50.png' target='_blank'>loginSuccessWithValidCredentialTest</a></div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.swaglabs.LoginTest@38c5cc4c</td></tr>
 </table><p>
 </body>
 </html>

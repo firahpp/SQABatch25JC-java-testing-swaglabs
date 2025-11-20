@@ -30,4 +30,9 @@ public class ScreenshotListener implements ITestListener {
     Reporter.log("<div><img style='width: 30%' src='" + path + "' /></div>");
     Reporter.log("<div><a href='"+ path +"' target='_blank'>" + result.getName()  + "</a></div>");							
   }	
+
+  @Override
+  public void onFinish(ITestContext Result) {
+    System.out.println("=============== onFinish ============");
+  }
 }

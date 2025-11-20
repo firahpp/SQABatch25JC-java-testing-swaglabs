@@ -1,25 +1,19 @@
 package com.juaracoding.swaglabs;
 
-import java.rmi.server.ExportException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.juaracoding.swaglabs.pages.InventoryPage;
+import com.juaracoding.swaglabs.pages.LoginPage;
 import com.juaracoding.swaglabs.utils.MiscUtil;
 
 
 public class InventoryTest extends BaseTest {
   private InventoryPage inventoryPage;
+  private LoginPage loginPage;
 
   @Test(priority = 1, enabled = true)
   @Parameters({"username", "password"})
@@ -101,4 +95,55 @@ public class InventoryTest extends BaseTest {
 
     Assert.assertTrue(MiscUtil.isSorted(inventoryPage.getPrices()));
   }
+
+  @Test(priority = 5, enabled = true)
+  public void forbidenAccessToInventoryPageWithoutLoginTest() {
+    setManualOpenBrowser();
+    openBrowser("https://www.saucedemo.com/inventory.html");
+   
+
+    loginPage = new LoginPage(driver);
+
+    String expected = "https://www.saucedemo.com/";
+    Assert.assertEquals(loginPage.getCurrentURL(), expected);
+
+
+    expected = "Epic sadface: You can only access '/inventory.html' when you are logged in.";
+    Assert.assertEquals(loginPage.getErrorMessage(), expected);
+    setAutoOpenBrowser();
 }
+
+@Test(priority = 6, enabled = true)
+  @Parameters({"username", "password"})
+  public void resetApplicationSateAfterProductAddTest(String username, String password) throws InterruptedException {
+    preTestLogin(username, password);
+
+    List<Boolean> addToCartButtons = new ArrayList<>();
+    inventoryPage = new InventoryPage(driver);
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-backpack']");
+    inventoryPage.getHeaderComponent().clickButtonAddToCart();
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-bike-light']");
+    inventoryPage.getHeaderComponent().clickButtonAddToCart();
+
+    Assert.assertEquals(inventoryPage.getHeaderComponent().getTotalCart(), 2);
+
+    inventoryPage.getNavbarComponent().clickBurgerMenu();
+    inventoryPage.getNavbarComponent().clickResetSideBar();
+
+    Assert.assertFalse(inventoryPage.getHeaderComponent().isVisibleCartIcon());
+    
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-backpack']");
+    addToCartButtons.add(inventoryPage.getHeaderComponent().isVisibleButtonAddToCart());
+
+    inventoryPage.getHeaderComponent().setButtonAddToCart("//button[@data-test='add-to-cart-sauce-labs-bike-light']");
+    addToCartButtons.add(inventoryPage.getHeaderComponent().isVisibleButtonAddToCart());
+
+    long actual = addToCartButtons.stream()
+      .filter(n -> n)
+      .count();
+
+    Assert.assertEquals(actual, 2);
+  }
+} 

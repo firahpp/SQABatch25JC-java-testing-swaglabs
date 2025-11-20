@@ -11,13 +11,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 import com.juaracoding.swaglabs.listeners.ScreenshotListener;
+import com.juaracoding.swaglabs.listeners.SendEmailReporter;
 import com.juaracoding.swaglabs.pages.LoginPage;
 
-@Listeners(ScreenshotListener.class)
+@Listeners({ScreenshotListener.class, SendEmailReporter.class})
 public abstract class BaseTest {
 
     protected WebDriver driver; //hanya bisa diakses oleh diri sendiri atau turunannya
+    private boolean manualOpeningBrowser = false;
 
+    public void setManualOpenBrowser() {
+        manualOpeningBrowser = true;
+      }
+    
+      public void setAutoOpenBrowser() {
+       manualOpeningBrowser = false;
+      }
     @BeforeMethod
     public void setUp(ITestContext context){
         // 1. Buat objek ChromeOptions
@@ -52,7 +61,10 @@ public abstract class BaseTest {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         context.setAttribute("driver", driver);
-        openBrowser("https://www.saucedemo.com/");
+        if (!manualOpeningBrowser) {
+            openBrowser("https://www.saucedemo.com/");
+        }
+        
     
     }
 
@@ -78,7 +90,7 @@ public abstract class BaseTest {
 
     public void preTestLogin(String username, String password) throws InterruptedException {
      LoginPage loginPage = new LoginPage(driver);
-    loginPage.login(username, password, 100);
+    loginPage.login(username, password, 500);
     }
     
 }

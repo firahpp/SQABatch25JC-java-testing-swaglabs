@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Java Testing]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Basic Test(failed)" verbose="0">
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="invalidUsername" value="invalid_user"/>
+    <parameter name="emptyUsername" value=""/>
+    <parameter name="invalidPassword" value="invalid_user"/>
+    <parameter name="username" value="standard_user"/>
+    <parameter name="emptyPassword" value=""/>
+    <classes>
+      <class name="com.juaracoding.swaglabs.InventoryTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="resetApplicationSateAfterProductAddTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.juaracoding.swaglabs.InventoryTest -->
+    </classes>
+  </test> <!-- Basic Test(failed) -->
+</suite> <!-- Failed suite [Java Testing] -->
