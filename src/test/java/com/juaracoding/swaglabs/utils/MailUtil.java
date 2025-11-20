@@ -28,6 +28,10 @@ public class MailUtil {
     props.put("mail.smtp.port", properties.getProperty("mail.smtp.port"));
     props.put("mail.smtp.auth", properties.getProperty("mail.smtp.auth"));
 
+    // ==== ENABLE TLS ====
+    props.put("mail.smtp.starttls.enable", properties.getProperty("mail.smtp.starttls.enable"));
+    props.put("mail.smtp.starttls.required", properties.getProperty("mail.smtp.starttls.required"));
+    
     String username = properties.getProperty("mail.smtp.username");
     String password = properties.getProperty("mail.smtp.password");
 

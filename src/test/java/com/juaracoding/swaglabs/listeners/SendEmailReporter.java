@@ -13,8 +13,8 @@ public class SendEmailReporter implements IReporter {
   public void generateReport(List xmlSuites, List suites, String outputDirectory) {
     System.out.println("=== ALL REPORTS GENERATED ===");
     try {
-      // MailUtil.sendEmail();
-      MailUtil.sendEmailHTMLRendered();
+      MailUtil.sendEmail();
+      // MailUtil.sendEmailHTMLRendered();
     } catch (IOException e) {
       e.printStackTrace();
     }
