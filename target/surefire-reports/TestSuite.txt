@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 83.33 s <<< FAILURE! -- in TestSuite
-com.juaracoding.swaglabs.InventoryTest.resetApplicationSateAfterProductAddTest[standard_user, secret_sauce](1) -- Time elapsed: 1.088 s <<< FAILURE!
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 56.72 s <<< FAILURE! -- in TestSuite
+com.juaracoding.swaglabs.InventoryTest.resetApplicationSateAfterProductAddTest[standard_user, secret_sauce](1) -- Time elapsed: 0.859 s <<< FAILURE!
 org.openqa.selenium.ElementNotInteractableException: 
 element not interactable
   (Session info: chrome=142.0.7444.176)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.1', java.version: '25'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [abeb92d55992235e2ae59fc2c5ac0c3c, clickElement {id=f.23CCC634B68BC1A6289DA72978616A51.d.D071E302AFA0003656B4B4061D621D25.e.23}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/5j/brbg8w1j4qv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57289}, goog:processID: 21059, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57289/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (abeb92d55992235e2ae59fc2c5ac0c3c)] -> id: reset_sidebar_link]
-Session ID: abeb92d55992235e2ae59fc2c5ac0c3c
+Command: [d6622caccbf010c15ff82c9f250ce2fa, clickElement {id=f.2B6907F760092C6C105CC7ED64CC57E9.d.A62CE34FB6FC15CE3E5661A66A6F8808.e.23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/5j/brbg8w1j4qv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53220}, goog:processID: 7212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53220/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d6622caccbf010c15ff82c9f250ce2fa)] -> id: reset_sidebar_link]
+Session ID: d6622caccbf010c15ff82c9f250ce2fa
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
