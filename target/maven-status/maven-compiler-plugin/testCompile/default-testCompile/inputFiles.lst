@@ -4,6 +4,7 @@
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/LoginTest.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/BaseTest.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/components/BaseComponent.java
+/Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/IPageComponent.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/listeners/ScreenshotListener.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/LoginPage.java
 /Users/fauzanfr/mpir/JuaraCoding/SQABatch25/swaglabs-test/src/test/java/com/juaracoding/swaglabs/pages/BasePage.java

@@ -9,6 +9,7 @@ com/juaracoding/swaglabs/components/BaseComponent.class
 com/juaracoding/swaglabs/pages/InventoryPage.class
 com/juaracoding/swaglabs/utils/MiscUtil.class
 com/juaracoding/swaglabs/pages/BasePage.class
+com/juaracoding/swaglabs/pages/IPageComponent.class
 com/juaracoding/swaglabs/components/NavbarComponent.class
 com/juaracoding/swaglabs/listeners/ScreenshotListener.class
 com/juaracoding/swaglabs/listeners/SendEmailReporter.class
